@@ -1,0 +1,1 @@
+pdflatex mise-en-forme-by-latex.tex 

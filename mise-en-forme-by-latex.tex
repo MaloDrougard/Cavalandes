@@ -1,0 +1,55 @@
+\documentclass[oneside]{book}
+\usepackage[utf8]{inputenc} 
+
+% pour le fichier 1_parmi_12
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage[T1]{fontenc}
+
+%\DeclareUnicodeCharacter{0010}{ } % to fix the bug: Package inputenc Error: Unicode char \u8: not set up for use with LaTeX.
+
+
+
+\usepackage{titlesec}
+\titleformat{\chapter}[display]{\normalfont\huge\bfseries}{\chaptername}{}{\Huge}[]
+%\titleformat{name=\chapter, numberless}[block]{}{}{0pt}{}[]
+\titlespacing{\chapter}{0pt}{-3em}{2.5em}
+%\titlespacing{name=\chapter, numberless}{0em}{0em}{0em}
+
+
+%\setlength{\parskip}{0\baselineskip}%
+
+\begin{document}
+
+\title{\uppercase{Cavalandes}\\ \vspace{1em } Maëlle Torné, Lucrezia Oberli, Malo Drougard}
+\date{}
+\maketitle
+
+
+
+
+
+\chapter*{Scène 1: Du fin fond de l’espace jusqu’à Kalidou}
+{\obeylines % To keep the line breaks
+\input{1-espace.txt}
+
+\chapter*{Scène 2: Jasmine dans le désert}
+\input{2-jasmine.txt}
+
+\chapter*{Scène 3: Transition vers une teuf avec Dionysos}
+\input{3-transition.txt}
+
+\chapter*{Scène 4: Une teuf avec Dionysos}
+\input{4-teuf.txt}
+
+\chapter*{Scène 5: Transition vers les murmures des anges}
+\input{5-transition-anges.txt}
+
+\chapter*{Scène 6: Murmures des anges}
+\input{6-murmure-des-anges.txt}
+
+\chapter*{Scène 7: Révélation}
+\input{7-revelation.txt}
+}
+\end{document}
+ 
